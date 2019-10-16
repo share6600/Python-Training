@@ -1,6 +1,6 @@
 operations = {
-  "total": lambda seq : sum(seq),
-  "top": lambda seq : max(seq),
+  "total": sum,
+  "top": max,
   "avg": lambda seq :sum(seq)/len(seq)
 }
 
