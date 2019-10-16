@@ -1,7 +1,7 @@
-thisdict = {
+operations = {
   "total": lambda seq : sum(seq),
   "top": lambda seq : max(seq),
-  "average": lambda seq :sum(seq)/len(seq)
+  "avg": lambda seq :sum(seq)/len(seq)
 }
 
 listofcars = [
@@ -33,6 +33,6 @@ for car in listofcars:
 
 
 
-operation = input("enter operation you like total of all available or max price or average")
-result = thisdict[operation](theprices)
+operation = input(f"enter operation you like to applay on your {name} => (total) for sum of all prices or (top) for max price or (avg) for avarage price  ")
+result = operations[operation](theprices)
 print(result)
